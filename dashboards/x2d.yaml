@@ -24,6 +24,11 @@ cards:
               show_icon: true
               show_state: true
               type: glance
+              card_mod:
+                style: |
+                  ha-card {
+                    font-size: 1.5rem !important;
+                  }
               entities:
                 - entity: sensor.x2d_20p6bj631101145_left_nozzle_temperature
                   icon: mdi:printer-3d-nozzle-heat
@@ -168,9 +173,12 @@ cards:
                     ha-card {
                       font-size: 3.7rem !important;
                     }
-              - type: entity
+              - type: template
                 entity: sensor.x2d_20p6bj631101145_ams_1_tray_1_2
                 icon: mdi:circle-slice-8
+                content: >-
+                  {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_1_2',
+                  'type') }}
                 card_mod:
                   style: |
                     * {
@@ -181,9 +189,12 @@ cards:
                     ha-card {
                       font-size: 3.7rem !important;
                     }
-              - type: entity
+              - type: template
                 entity: sensor.x2d_20p6bj631101145_ams_1_tray_2_2
                 icon: mdi:circle-slice-8
+                content: >-
+                  {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_2_2',
+                  'type') }}
                 card_mod:
                   style: |
                     * {
@@ -194,9 +205,12 @@ cards:
                     ha-card {
                       font-size: 3.7rem !important;
                     }
-              - type: entity
+              - type: template
                 entity: sensor.x2d_20p6bj631101145_ams_1_tray_3_2
                 icon: mdi:circle-slice-8
+                content: >-
+                  {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_3_2',
+                  'type') }}
                 card_mod:
                   style: |
                     * {
@@ -207,9 +221,12 @@ cards:
                     ha-card {
                       font-size: 3.7rem !important;
                     }
-              - type: entity
+              - type: template
                 entity: sensor.x2d_20p6bj631101145_ams_1_tray_4_2
                 icon: mdi:circle-slice-8
+                content: >-
+                  {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_4_2',
+                  'type') }}
                 card_mod:
                   style: |
                     * {
@@ -258,9 +275,12 @@ cards:
                     ha-card {
                       font-size: 3.7rem !important;
                     }
-              - type: entity
+              - type: template
                 entity: sensor.x2d_20p6bj631101145_ams_1_tray_1
                 icon: mdi:circle-slice-8
+                content: >-
+                  {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_1',
+                  'type') }}
                 card_mod:
                   style: |
                     * {
@@ -271,9 +291,12 @@ cards:
                     ha-card {
                       font-size: 3.7rem !important;
                     }
-              - type: entity
+              - type: template
                 entity: sensor.x2d_20p6bj631101145_ams_1_tray_2
                 icon: mdi:circle-slice-8
+                content: >-
+                  {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_2',
+                  'type') }}
                 card_mod:
                   style: |
                     * {
@@ -284,9 +307,12 @@ cards:
                     ha-card {
                       font-size: 3.7rem !important;
                     }
-              - type: entity
+              - type: template
                 entity: sensor.x2d_20p6bj631101145_ams_1_tray_3
                 icon: mdi:circle-slice-8
+                content: >-
+                  {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_3',
+                  'type') }}
                 card_mod:
                   style: |
                     * {
@@ -297,9 +323,12 @@ cards:
                     ha-card {
                       font-size: 3.7rem !important;
                     }
-              - type: entity
+              - type: template
                 entity: sensor.x2d_20p6bj631101145_ams_1_tray_4
                 icon: mdi:circle-slice-8
+                content: >-
+                  {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_4',
+                  'type') }}
                 card_mod:
                   style: |
                     * {
@@ -348,8 +377,11 @@ cards:
                     ha-card {
                       font-size: 3.7rem !important;
                     }
-              - type: entity
+              - type: template
                 entity: sensor.x2d_20p6bj631101145_ams_2_tray_1
+                content: >-
+                  {{state_attr('sensor.x2d_20p6bj631101145_ams_2_tray_1',
+                  'type') }}
                 icon: mdi:circle-slice-8
                 card_mod:
                   style: |
@@ -361,9 +393,12 @@ cards:
                     ha-card {
                       font-size: 3.7rem !important;
                     }
-              - type: entity
+              - type: template
                 entity: sensor.x2d_20p6bj631101145_ams_2_tray_2
                 icon: mdi:circle-slice-8
+                content: >-
+                  {{state_attr('sensor.x2d_20p6bj631101145_ams_2_tray_2',
+                  'type') }}
                 card_mod:
                   style: |
                     * {
@@ -374,9 +409,12 @@ cards:
                     ha-card {
                       font-size: 3.7rem !important;
                     }
-              - type: entity
+              - type: template
                 entity: sensor.x2d_20p6bj631101145_ams_2_tray_3
                 icon: mdi:circle-slice-8
+                content: >-
+                  {{state_attr('sensor.x2d_20p6bj631101145_ams_2_tray_3',
+                  'type') }}
                 card_mod:
                   style: |
                     * {
@@ -387,9 +425,12 @@ cards:
                     ha-card {
                       font-size: 3.7rem !important;
                     }
-              - type: entity
+              - type: template
                 entity: sensor.x2d_20p6bj631101145_ams_2_tray_4
                 icon: mdi:circle-slice-8
+                content: >-
+                  {{state_attr('sensor.x2d_20p6bj631101145_ams_2_tray_4',
+                  'type') }}
                 card_mod:
                   style: |
                     * {
@@ -438,9 +479,12 @@ cards:
                     ha-card {
                       font-size: 3.7rem !important;
                     }
-              - type: entity
+              - type: template
                 entity: sensor.x2d_20p6bj631101145_ams_128_tray_1
                 icon: mdi:circle-slice-8
+                content: >-
+                  {{state_attr('sensor.x2d_20p6bj631101145_ams_128_tray_1',
+                  'type') }}
                 card_mod:
                   style: |
                     * {
