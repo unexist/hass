@@ -1,5 +1,11 @@
 = Home Assistant
 
+:shelly: https://www.shelly.com/de/pages/wall-display
+:xineon: https://www.corsair.com/us/en/s/xeneon-edge-lcd-touchscreen
+:netro: https://www.corsair.com/us/en/s/xeneon-edge-lcd-touchscreen
+:humidtysensor: https://de.aliexpress.com/item/1005012719571932.html
+:x2d: https://bambulab.com/en/x2d
+
 This repository contains a collection of HASS related stuff
 
 == Dashboards
@@ -8,18 +14,18 @@ This repository contains a collection of HASS related stuff
 | Name | Description | Picture
 
 | Floorplan
-| Default view of the Shelly displays
+| Default view of the {shelly}[Shelly wall displays]
 a| image::dashboards/assets/screenshots/floorplan.png[]
 
 | Deskdeck
-| Default view of the Xineon Edge display
+| Default view of the {xeneon}[Xeneon Edge display]
 a| image::dashboards/assets/screenshots/deskdeck.png[]
 
 | Plants
-| Plant monitor
-a| image::dashbaords/assets/screenshots/plants.png[]
+| Plant monitor in test (mainly {humidtysensor}[AliExpress humidty sensor] and {netro}[Netro Whisperer]
+a| image::dashboards/assets/screenshots/plants.png[]
 
 | X2D
-| Standalone dashboard for my Bambulabs X2D
-a| image::dashbaords/assets/screenshots/x2d.png[]
+| Standalone dashboard for my {x2d}[Bambulab X2D]
+a| image::dashboards/assets/screenshots/x2d.png[]
 |===
