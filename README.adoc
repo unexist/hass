@@ -9,17 +9,17 @@ This repository contains a collection of HASS related stuff
 
 | Floorplan
 | Default view of the Shelly displays
-a| image::assets/screenshots/floorplan.png[]
+a| image::dashboards/assets/screenshots/floorplan.png[]
 
 | Deskdeck
 | Default view of the Xineon Edge display
-a| image::assets/screenshots/deskdeck.png[]
+a| image::dashboards/assets/screenshots/deskdeck.png[]
 
 | Plants
 | Plant monitor
-a| image::assets/screenshots/plants.png[]
+a| image::dashbaords/assets/screenshots/plants.png[]
 
 | X2D
 | Standalone dashboard for my Bambulabs X2D
-a| image::assets/screenshots/x2d.png[]
+a| image::dashbaords/assets/screenshots/x2d.png[]
 |===
