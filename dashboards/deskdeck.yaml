@@ -1,0 +1,705 @@
+views:
+  - type: sections
+    sections:
+      - type: grid
+        cards:
+          - type: heading
+            heading_style: title
+          - type: picture-elements
+            elements: []
+            camera_image: camera.g4_doorbell_pro_high_resolution_channel
+            camera_view: auto
+          - type: tile
+            entity: binary_sensor.studio_switch_opening
+            name: Studio
+            show_entity_picture: false
+            vertical: false
+            features_position: bottom
+          - type: tile
+            entity: binary_sensor.garden_contact_opening
+            name: Garden
+            vertical: false
+            features_position: bottom
+          - type: tile
+            entity: scene.chillen
+          - type: tile
+            entity: scene.morning
+          - type: tile
+            entity: scene.gute_nachti
+          - type: tile
+            entity: scene.music_off_studio
+        column_span: 1
+      - type: grid
+        cards:
+          - type: heading
+            heading_style: title
+          - type: tile
+            grid_options:
+              rows: auto
+              columns: full
+            entity: media_player.denon_home_150_nv
+            name: Studio
+            show_entity_picture: true
+            hide_state: false
+            state_content:
+              - media_artist
+              - media_title
+            vertical: false
+            features:
+              - type: media-player-volume-slider
+            features_position: inline
+          - type: tile
+            grid_options:
+              rows: auto
+              columns: full
+            entity: media_player.denon_home_150_3
+            name: Fitness
+            show_entity_picture: true
+            state_content:
+              - media_artist
+              - media_title
+            vertical: false
+            features:
+              - type: media-player-volume-slider
+            features_position: inline
+          - type: tile
+            grid_options:
+              rows: auto
+              columns: full
+            entity: media_player.kitchen
+            name: Hausothesien
+            show_entity_picture: true
+            state_content:
+              - media_artist
+              - media_title
+            vertical: false
+            features:
+              - type: media-player-volume-slider
+            features_position: inline
+          - type: tile
+            entity: switch.steampunk_high
+            icon: mdi:toy-brick
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.steampunk_low
+            icon: mdi:toy-brick
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.dune
+            icon: mdi:toy-brick
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.astronaut
+            icon: mdi:toy-brick
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.onepiece
+            icon: mdi:toy-brick
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.dragonball
+            icon: mdi:toy-brick
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.horizon
+            icon: mdi:toy-brick
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.neoncity
+            icon: mdi:toy-brick
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.gameboy
+            icon: mdi:toy-brick
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.zelda
+            icon: mdi:toy-brick
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.balrog
+            icon: mdi:toy-brick
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: thermostat
+            entity: climate.studio_l
+            grid_options:
+              columns: 12
+              rows: 3
+          - type: thermostat
+            entity: climate.studio_r
+            grid_options:
+              columns: 12
+              rows: 3
+        column_span: 2
+      - type: grid
+        cards:
+          - type: heading
+            heading_style: title
+          - type: vertical-stack
+            cards:
+              - type: horizontal-stack
+                cards:
+                  - type: custom:mod-card
+                    card:
+                      type: picture-entity
+                      entity: image.x2d_20p6bj631101145_cover_image
+                      card_mod:
+                        style: |
+                          ha-card {
+                            height: 320px !important;
+                            width: 460px !important;
+                            margin-right: 0px !important;
+                            background-color: rgba(255,254,249, 0.25) !important;
+                          }
+                      show_name: false
+                      show_state: false
+                      fit_mode: contain
+                  - type: vertical-stack
+                    cards:
+                      - type: custom:mod-card
+                        card:
+                          show_name: false
+                          show_icon: true
+                          show_state: true
+                          type: glance
+                          card_mod:
+                            style: |
+                              ha-card {
+                                font-size: 1.5rem !important;
+                              }
+                          entities:
+                            - entity: >-
+                                sensor.x2d_20p6bj631101145_left_nozzle_temperature
+                              icon: mdi:printer-3d-nozzle-heat
+                            - entity: >-
+                                sensor.x2d_20p6bj631101145_right_nozzle_temperature
+                              icon: mdi:printer-3d-nozzle-heat
+                            - entity: sensor.x2d_20p6bj631101145_bed_temperature
+                              icon: mdi:train-car-flatbed
+                            - entity: sensor.x2d_20p6bj631101145_chamber_temperature
+                              icon: mdi:minus-box-outline
+                            - entity: sensor.x2d_20p6bj631101145_chamber_temperature
+                          state_color: false
+                      - type: custom:mod-card
+                        card:
+                          type: custom:timer-bar-card
+                          entities:
+                            - entity: sensor.x2d_20p6bj631101145_print_progress
+                              guess_mode: true
+                              active_icon: mdi:printer-3d
+                              start_time:
+                                entity: sensor.x2d_20p6bj631101145_start_time
+                              end_time:
+                                entity: sensor.x2d_20p6bj631101145_end_time
+                          layout: full_row
+                          text_width: 0px
+                      - type: custom:mod-card
+                        card:
+                          type: custom:mushroom-chips-card
+                          chips:
+                            - entity: spacer
+                            - type: entity
+                              entity: sensor.x2d_20p6bj631101145_print_progress
+                              card_mod:
+                                style: |
+                                  ha-card {
+                                    font-size: 3.7rem !important;
+                                  }
+                            - type: entity
+                              entity: sensor.x2d_20p6bj631101145_remaining_time
+                              card_mod:
+                                style: |
+                                  ha-card {
+                                    font-size: 3.7rem !important;
+                                  }
+                            - type: entity
+                              entity: sensor.x2d_20p6bj631101145_end_time
+                              card_mod:
+                                style: |
+                                  ha-card {
+                                    font-size: 3.7rem !important;
+                                  }
+                            - entity: spacer
+                          alignment: left
+              - type: vertical-stack
+                cards:
+                  - type: custom:mod-card
+                    card:
+                      type: custom:mushroom-chips-card
+                      chips:
+                        - type: template
+                          entity: binary_sensor.x2d_20p6bj631101145_online
+                          content: Printer
+                          card_mod:
+                            style: |
+                              ha-card {
+                                background: none !important;
+                                border: none;
+                                font-size: 4.7rem !important;
+                              }
+                        - type: spacer
+                        - type: entity
+                          entity: binary_sensor.x2d_20p6bj631101145_hms_errors
+                          icon: mdi:alert-circle
+                          card_mod:
+                            style: |
+                              ha-card {
+                                font-size: 3.7rem !important;
+                              }
+                        - type: entity
+                          entity: binary_sensor.x2d_20p6bj631101145_online
+                          card_mod:
+                            style: |
+                              ha-card {
+                                font-size: 3.7rem !important;
+                              }
+                        - type: entity
+                          entity: sensor.x2d_20p6bj631101145_current_stage
+                          card_mod:
+                            style: |
+                              ha-card {
+                                font-size: 3.7rem !important;
+                              }
+                        - type: entity
+                          entity: sensor.x2d_20p6bj631101145_wi_fi_signal
+                          card_mod:
+                            style: |
+                              ha-card {
+                                font-size: 3.7rem !important;
+                              }
+                        - type: light
+                          icon: mdi:lightbulb
+                          entity: light.x2d_20p6bj631101145_chamber_light
+                          card_mod:
+                            style: |
+                              ha-card {
+                                font-size: 3.7rem !important;
+                              }
+                  - type: horizontal-stack
+                    cards:
+                      - type: custom:mushroom-chips-card
+                        chips:
+                          - type: template
+                            entity: binary_sensor.x2d_20p6bj631101145_online
+                            content: AMS1
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  background: none !important;
+                                  border: none;
+                                  font-size: 4.7rem !important;
+                                }
+                          - type: spacer
+                          - type: entity
+                            entity: sensor.x2d_20p6bj631101145_ams_1_temperature_2
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: entity
+                            entity: sensor.x2d_20p6bj631101145_ams_1_humidity_2
+                            icon: mdi:water-opacity
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: entity
+                            entity: binary_sensor.x2d_20p6bj631101145_ams_1_drying_2
+                            icon: mdi:hair-dryer
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: template
+                            entity: sensor.x2d_20p6bj631101145_ams_1_tray_1_2
+                            icon: mdi:circle-slice-8
+                            content: >-
+                              {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_1_2',
+                              'type') }}
+                            card_mod:
+                              style: |
+                                * {
+                                  color: {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_1_2', 'color') }} !important;
+                                  background-color: {% if is_state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_1_2', 'active', true) %} rgba(255,254,249, 0.25); {% else %} rgba(111,111,111, 0.2) {% endif %};
+                                  border-radius: var(--chip-border-radius);
+                                }
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: template
+                            entity: sensor.x2d_20p6bj631101145_ams_1_tray_2_2
+                            icon: mdi:circle-slice-8
+                            content: >-
+                              {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_2_2',
+                              'type') }}
+                            card_mod:
+                              style: |
+                                * {
+                                  color: {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_2_2', 'color') }} !important;
+                                  background-color: {% if is_state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_2_2', 'active', true) %} rgba(255,254,249, 0.25); {% else %} rgba(111,111,111, 0.2) {% endif %};
+                                  border-radius: var(--chip-border-radius);
+                                }
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: template
+                            entity: sensor.x2d_20p6bj631101145_ams_1_tray_3_2
+                            icon: mdi:circle-slice-8
+                            content: >-
+                              {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_3_2',
+                              'type') }}
+                            card_mod:
+                              style: |
+                                * {
+                                  color: {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_3_2', 'color') }} !important;
+                                  background-color: {% if is_state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_3_2', 'active', true) %} rgba(255,254,249, 0.25); {% else %} rgba(111,111,111, 0.2) {% endif %};
+                                  border-radius: var(--chip-border-radius);
+                                }
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: template
+                            entity: sensor.x2d_20p6bj631101145_ams_1_tray_4_2
+                            icon: mdi:circle-slice-8
+                            content: >-
+                              {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_4_2',
+                              'type') }}
+                            card_mod:
+                              style: |
+                                * {
+                                  color: {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_4_2', 'color') }} !important;
+                                  background-color: {% if is_state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_4_2', 'active', true) %} rgba(255,254,249, 0.25); {% else %} rgba(111,111,111, 0.2) {% endif %};
+                                  border-radius: var(--chip-border-radius);
+                                }
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                  - type: horizontal-stack
+                    cards:
+                      - type: custom:mushroom-chips-card
+                        chips:
+                          - type: template
+                            entity: binary_sensor.x2d_20p6bj631101145_online
+                            content: AMS2
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  background: none !important;
+                                  border: none;
+                                  font-size: 4.7rem !important;
+                                }
+                          - type: spacer
+                          - type: entity
+                            entity: sensor.x2d_20p6bj631101145_ams_1_temperature
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: entity
+                            entity: sensor.x2d_20p6bj631101145_ams_1_humidity
+                            icon: mdi:water-opacity
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: entity
+                            entity: binary_sensor.x2d_20p6bj631101145_ams_1_drying
+                            icon: mdi:hair-dryer
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: template
+                            entity: sensor.x2d_20p6bj631101145_ams_1_tray_1
+                            icon: mdi:circle-slice-8
+                            content: >-
+                              {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_1',
+                              'type') }}
+                            card_mod:
+                              style: |
+                                * {
+                                  color: {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_1', 'color') }} !important;
+                                  background-color: {% if is_state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_1', 'active', true) %} rgba(255,254,249, 0.25); {% else %} rgba(111,111,111, 0.2) {% endif %};
+                                  border-radius: var(--chip-border-radius);
+                                }
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: template
+                            entity: sensor.x2d_20p6bj631101145_ams_1_tray_2
+                            icon: mdi:circle-slice-8
+                            content: >-
+                              {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_2',
+                              'type') }}
+                            card_mod:
+                              style: |
+                                * {
+                                  color: {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_2', 'color') }} !important;
+                                  background-color: {% if is_state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_2', 'active', true) %} rgba(255,254,249, 0.25); {% else %} rgba(111,111,111, 0.2) {% endif %};
+                                  border-radius: var(--chip-border-radius);
+                                }
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: template
+                            entity: sensor.x2d_20p6bj631101145_ams_1_tray_3
+                            icon: mdi:circle-slice-8
+                            content: >-
+                              {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_3',
+                              'type') }}
+                            card_mod:
+                              style: |
+                                * {
+                                  color: {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_3', 'color') }} !important;
+                                  background-color: {% if is_state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_3', 'active', true) %} rgba(255,254,249, 0.25); {% else %} rgba(111,111,111, 0.2) {% endif %};
+                                  border-radius: var(--chip-border-radius);
+                                }
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: template
+                            entity: sensor.x2d_20p6bj631101145_ams_1_tray_4
+                            icon: mdi:circle-slice-8
+                            content: >-
+                              {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_4',
+                              'type') }}
+                            card_mod:
+                              style: |
+                                * {
+                                  color: {{state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_4', 'color') }} !important;
+                                  background-color: {% if is_state_attr('sensor.x2d_20p6bj631101145_ams_1_tray_4', 'active', true) %} rgba(255,254,249, 0.25); {% else %} rgba(111,111,111, 0.2) {% endif %};
+                                  border-radius: var(--chip-border-radius);
+                                }
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                  - type: horizontal-stack
+                    cards:
+                      - type: custom:mushroom-chips-card
+                        chips:
+                          - type: template
+                            entity: binary_sensor.x2d_20p6bj631101145_online
+                            content: AMS3
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  background: none !important;
+                                  border: none;
+                                  font-size: 4.7rem !important;
+                                }
+                          - type: spacer
+                          - type: entity
+                            entity: sensor.x2d_20p6bj631101145_ams_2_temperature
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  font-size: 4.7rem !important;
+                                }
+                          - type: entity
+                            entity: sensor.x2d_20p6bj631101145_ams_2_humidity
+                            icon: mdi:water-opacity
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: entity
+                            entity: binary_sensor.x2d_20p6bj631101145_ams_2_drying
+                            icon: mdi:hair-dryer
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: template
+                            entity: sensor.x2d_20p6bj631101145_ams_2_tray_1
+                            content: >-
+                              {{state_attr('sensor.x2d_20p6bj631101145_ams_2_tray_1',
+                              'type') }}
+                            icon: mdi:circle-slice-8
+                            card_mod:
+                              style: |
+                                * {
+                                  color: {{state_attr('sensor.x2d_20p6bj631101145_ams_2_tray_1', 'color') }} !important;
+                                  background-color: {% if is_state_attr('sensor.x2d_20p6bj631101145_ams_2_tray_1', 'active', true) %} rgba(255,254,249, 0.25); {% else %} rgba(111,111,111, 0.2) {% endif %};
+                                  border-radius: var(--chip-border-radius);
+                                }
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: template
+                            entity: sensor.x2d_20p6bj631101145_ams_2_tray_2
+                            icon: mdi:circle-slice-8
+                            content: >-
+                              {{state_attr('sensor.x2d_20p6bj631101145_ams_2_tray_2',
+                              'type') }}
+                            card_mod:
+                              style: |
+                                * {
+                                  color: {{state_attr('sensor.x2d_20p6bj631101145_ams_2_tray_2', 'color') }} !important;
+                                  background-color: {% if is_state_attr('sensor.x2d_20p6bj631101145_ams_2_tray_2', 'active', true) %} rgba(255,254,249, 0.25); {% else %} rgba(111,111,111, 0.2) {% endif %};
+                                  border-radius: var(--chip-border-radius);
+                                }
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: template
+                            entity: sensor.x2d_20p6bj631101145_ams_2_tray_3
+                            icon: mdi:circle-slice-8
+                            content: >-
+                              {{state_attr('sensor.x2d_20p6bj631101145_ams_2_tray_3',
+                              'type') }}
+                            card_mod:
+                              style: |
+                                * {
+                                  color: {{state_attr('sensor.x2d_20p6bj631101145_ams_2_tray_3', 'color') }} !important;
+                                  background-color: {% if is_state_attr('sensor.x2d_20p6bj631101145_ams_2_tray_3', 'active', true) %} rgba(255,254,249, 0.25); {% else %} rgba(111,111,111, 0.2) {% endif %};
+                                  border-radius: var(--chip-border-radius);
+                                }
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: template
+                            entity: sensor.x2d_20p6bj631101145_ams_2_tray_4
+                            icon: mdi:circle-slice-8
+                            content: >-
+                              {{state_attr('sensor.x2d_20p6bj631101145_ams_2_tray_4',
+                              'type') }}
+                            card_mod:
+                              style: |
+                                * {
+                                  color: {{state_attr('sensor.x2d_20p6bj631101145_ams_2_tray_4', 'color') }} !important;
+                                  background-color: {% if is_state_attr('sensor.x2d_20p6bj631101145_ams_2_tray_4', 'active', true) %} rgba(255,254,249, 0.25); {% else %} rgba(111,111,111, 0.2) {% endif %};
+                                  border-radius: var(--chip-border-radius);
+                                }
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                  - type: horizontal-stack
+                    cards:
+                      - type: custom:mushroom-chips-card
+                        chips:
+                          - type: template
+                            entity: binary_sensor.x2d_20p6bj631101145_online
+                            content: AMS HT
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  background: none !important;
+                                  border: none;
+                                  font-size: 4.7rem !important;
+                                }
+                          - type: spacer
+                          - type: entity
+                            entity: sensor.x2d_20p6bj631101145_ams_128_temperature
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: entity
+                            entity: sensor.x2d_20p6bj631101145_ams_128_humidity
+                            icon: mdi:water-opacity
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: entity
+                            entity: binary_sensor.x2d_20p6bj631101145_ams_128_drying
+                            icon: mdi:hair-dryer
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+                          - type: template
+                            entity: sensor.x2d_20p6bj631101145_ams_128_tray_1
+                            icon: mdi:circle-slice-8
+                            content: >-
+                              {{state_attr('sensor.x2d_20p6bj631101145_ams_128_tray_1',
+                              'type') }}
+                            card_mod:
+                              style: |
+                                * {
+                                  color: {{state_attr('sensor.x2d_20p6bj631101145_ams_128_tray_1', 'color') }} !important;
+                                  background-color: {% if is_state_attr('sensor.x2d_20p6bj631101145_ams_128_tray_1', 'active', true) %} rgba(255,254,249, 0.25); {% else %} rgba(111,111,111, 0.2) {% endif %};
+                                  border-radius: var(--chip-border-radius);
+                                }
+                                ha-card {
+                                  font-size: 3.7rem !important;
+                                }
+            grid_options:
+              columns: 24
+              rows: 9
+        column_span: 2
+    cards: []
+    header:
+      layout: center
+      badges_position: bottom
+      badges_wrap: wrap
+    max_columns: 6
+    title: Main
+    dense_section_placement: true
+

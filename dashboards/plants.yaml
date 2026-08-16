@@ -1,0 +1,100 @@
+type: vertical-stack
+cards:
+  - type: heading
+    icon: ""
+    heading: Flitterbanane
+    heading_style: title
+  - show_state: true
+    show_name: false
+    camera_view: auto
+    fit_mode: contain
+    type: picture-entity
+    entity: sensor.hobeian_zg_303z_humidity
+    image:
+      media_content_id: media-source://image_upload/03c76d34338935895d2b32dada0afb15
+      media_content_type: image/png
+      metadata:
+        title: Plant1.png
+        thumbnail: /api/image/serve/03c76d34338935895d2b32dada0afb15/256x256
+        media_class: image
+        children_media_class: null
+        navigateIds:
+          - {}
+          - media_content_type: app
+            media_content_id: media-source://image_upload
+    visibility:
+      - condition: numeric_state
+        entity: sensor.hobeian_zg_303z_humidity
+        above: 80
+  - show_state: true
+    show_name: false
+    camera_view: auto
+    fit_mode: contain
+    type: picture-entity
+    entity: sensor.hobeian_zg_303z_humidity
+    image:
+      media_content_id: media-source://image_upload/4c1b984f5bce7f06d45b8f0d1dc7c7be
+      media_content_type: image/png
+      metadata:
+        title: Plant2.png
+        thumbnail: /api/image/serve/4c1b984f5bce7f06d45b8f0d1dc7c7be/256x256
+        media_class: image
+        children_media_class: null
+        navigateIds:
+          - {}
+          - media_content_type: app
+            media_content_id: media-source://image_upload
+    visibility:
+      - condition: numeric_state
+        entity: sensor.hobeian_zg_303z_humidity
+        above: 50
+        below: 80
+  - show_state: true
+    show_name: false
+    camera_view: auto
+    fit_mode: contain
+    type: picture-entity
+    entity: sensor.hobeian_zg_303z_humidity
+    image:
+      media_content_id: media-source://image_upload/96623458e2b5fc3b648f70572a9ebe50
+      media_content_type: image/png
+      metadata:
+        title: Plant3.png
+        thumbnail: /api/image/serve/96623458e2b5fc3b648f70572a9ebe50/256x256
+        media_class: image
+        children_media_class: null
+        navigateIds:
+          - {}
+          - media_content_type: app
+            media_content_id: media-source://image_upload
+    visibility:
+      - condition: numeric_state
+        entity: sensor.hobeian_zg_303z_humidity
+        above: 20
+        below: 50
+  - show_state: true
+    show_name: false
+    camera_view: auto
+    fit_mode: contain
+    type: picture-entity
+    entity: sensor.hobeian_zg_303z_humidity
+    image:
+      media_content_id: media-source://image_upload/a8ce37a69001e0e95bc40aedd2ad6b7b
+      media_content_type: image/png
+      metadata:
+        title: Plant4.png
+        thumbnail: /api/image/serve/a8ce37a69001e0e95bc40aedd2ad6b7b/256x256
+        media_class: image
+        children_media_class: null
+        navigateIds:
+          - {}
+          - media_content_type: app
+            media_content_id: media-source://image_upload
+    visibility:
+      - condition: numeric_state
+        entity: sensor.hobeian_zg_303z_humidity
+        below: 20
+grid_options:
+  rows: 12
+  columns: 3
+

@@ -1,0 +1,1340 @@
+views:
+  - title: Home
+    header:
+      layout: center
+      badges_position: bottom
+      badges_wrap: scroll
+    sections:
+      - type: grid
+        cards:
+          - type: picture-elements
+            elements:
+              - type: state-icon
+                style:
+                  top: 52%
+                  left: 67%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.ceilinglamp_b
+                icon: mdi:lamp
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Ceilinglamp (B)
+              - type: state-icon
+                style:
+                  top: 43%
+                  left: 46%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.ceilinglamp_f
+                icon: mdi:lamp
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Ceilinglamp (F)
+              - type: state-icon
+                style:
+                  top: 51%
+                  left: 53%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.ceiling_fan_with_light_switch
+                icon: mdi:ceiling-fan-light
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Ceiling Fan Light
+              - type: state-icon
+                style:
+                  top: 66%
+                  left: 23%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.desk_l
+                icon: mdi:led-strip-variant
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Desk (L)
+              - type: state-icon
+                style:
+                  top: 52%
+                  left: 24%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.desk_r
+                icon: mdi:led-strip-variant
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Desk (R)
+              - type: state-label
+                style:
+                  left: 0px
+                  bottom: 40px
+                  color: white
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: sensor.shelly_living_temperature
+                title: Temp
+                suffix: ' /'
+              - type: state-icon
+                style:
+                  left: 10px
+                  top: 60px
+                  color: gray
+                  border: 1px solid gray
+                  border-radius: 50%
+                  position: absolute
+                  transform: translate(0,0)
+                entity: scene.music_off_studio
+                icon: mdi:music-note-off-outline
+                title: Music off
+                tap_action:
+                  action: toggle
+              - type: state-label
+                style:
+                  left: 0px
+                  bottom: 20px
+                  color: gray
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: media_player.denon_home_150
+                title: Artist
+                attribute: media_artist
+              - type: state-label
+                style:
+                  left: 0px
+                  bottom: 0px
+                  color: gray
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: media_player.denon_home_150
+                title: Title
+                attribute: media_title
+              - type: state-label
+                style:
+                  left: 63px
+                  bottom: 40px
+                  color: white
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: sensor.shelly_living_humidity
+                title: Humidity
+              - type: state-icon
+                style:
+                  left: 60%
+                  top: 42%
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.cage
+                icon: mdi:string-lights
+                title: Cage
+                tap_action:
+                  action: toggle
+              - type: state-icon
+                style:
+                  top: 60%
+                  left: 47%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.ceiling_fan_with_light_switch
+                icon: mdi:ceiling-fan
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Ceiling Fan Light
+              - type: state-icon
+                style:
+                  top: 52%
+                  left: 40%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: media_player.studio1
+                icon: mdi:speaker
+                state_color: true
+                title: Studio (F)
+              - type: state-icon
+                style:
+                  top: 62%
+                  left: 60%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: media_player.studio2
+                icon: mdi:speaker
+                state_color: true
+                title: Studio (B)
+              - type: state-icon
+                style:
+                  top: 62%
+                  left: 14%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: media_player.denon_home_150
+                icon: mdi:speaker
+                state_color: true
+                title: Studio (SR)
+              - type: state-icon
+                style:
+                  top: 57%
+                  left: 77%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.steampunk_low
+                icon: mdi:toy-brick
+                state_color: true
+                title: 'Steampunk (low) '
+                tap_action:
+                  action: toggle
+              - type: state-icon
+                style:
+                  top: 37%
+                  left: 88%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.neoncity
+                icon: mdi:toy-brick
+                state_color: true
+                tap_action:
+                  action: toggle
+                title: Neon City
+              - type: state-icon
+                style:
+                  top: 27%
+                  left: 49%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.onepiece
+                icon: mdi:toy-brick
+                state_color: true
+                tap_action:
+                  action: toggle
+                title: One Piece
+              - type: state-icon
+                style:
+                  top: 66%
+                  left: 71%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.dune
+                icon: mdi:toy-brick
+                state_color: true
+                tap_action:
+                  action: toggle
+                title: Dune
+              - type: state-icon
+                style:
+                  top: 48%
+                  left: 82%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.steampunk_high
+                icon: mdi:toy-brick
+                state_color: true
+                title: Steampunk (top)
+                tap_action:
+                  action: toggle
+              - type: state-label
+                style:
+                  left: 0px
+                  bottom: 60px
+                  color: dimgray
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: sensor.3d_printer_temperature_2
+                suffix: ' /'
+                title: 3d Printer Temp
+              - type: state-label
+                style:
+                  left: 63px
+                  bottom: 60px
+                  color: dimgray
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: sensor.3d_printer_humidity
+                title: 3d Printer Humidity
+              - type: state-icon
+                style:
+                  top: 70%
+                  left: 32%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: media_player.denon_home_150
+                icon: mdi:speaker
+                state_color: true
+                title: Studio (SL)
+              - type: state-icon
+                style:
+                  top: 54%
+                  left: 17%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.tool_strip
+                icon: mdi:led-strip-variant
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Tool Strip
+              - type: state-icon
+                style:
+                  top: 32%
+                  left: 42%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.horizon
+                icon: mdi:toy-brick
+                state_color: true
+                tap_action:
+                  action: toggle
+                title: Horizon
+              - type: action-button
+                style:
+                  left: 10px
+                  top: 10px
+                  color: gray
+                  border: 1px solid gray
+                  border-radius: 50%
+                  position: absolute
+                  transform: translate(0,0)
+                action: media_player.volume_up
+                title: +
+                target:
+                  device_id:
+                    - 75b6a91e5739d73c62ca2a0fc86c1e7a
+                    - 60ff43a6fc891545a59a2f2ed3974d46
+                    - b2264d23305eb53eeaff8ee1f4b27457
+                    - 2f0711d76d99a6e10f6cd0b2b26a9ce1
+                data: {}
+              - type: action-button
+                style:
+                  left: 60px
+                  top: 10px
+                  color: gray
+                  border: 1px solid gray
+                  border-radius: 50%
+                  position: absolute
+                  transform: translate(0,0)
+                action: media_player.volume_down
+                title: '-'
+                target:
+                  device_id:
+                    - 75b6a91e5739d73c62ca2a0fc86c1e7a
+                    - 60ff43a6fc891545a59a2f2ed3974d46
+                    - b2264d23305eb53eeaff8ee1f4b27457
+                    - 2f0711d76d99a6e10f6cd0b2b26a9ce1
+              - type: state-icon
+                style:
+                  top: 29%
+                  left: 72%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.fridge
+                icon: mdi:fridge-industrial
+                state_color: true
+                title: Fridge
+                tap_action:
+                  action: toggle
+              - type: state-icon
+                style:
+                  top: 75%
+                  left: 66%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.astronaut
+                icon: mdi:toy-brick
+                state_color: true
+                tap_action:
+                  action: toggle
+                title: Astronaut
+              - type: state-icon
+                style:
+                  top: 56%
+                  left: 32%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.desktop
+                icon: mdi:television-ambient-light
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Desktop
+              - type: state-icon
+                style:
+                  top: 80%
+                  left: 35%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.dmx
+                icon: mdi:ev-plug-ccs1
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: DMX
+              - type: state-icon
+                style:
+                  top: 53%
+                  left: 9%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.gameboy
+                icon: mdi:toy-brick
+                state_color: true
+                tap_action:
+                  action: toggle
+                title: GameBoy
+              - type: state-icon
+                style:
+                  top: 40%
+                  left: 24%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.balrog
+                icon: mdi:toy-brick
+                state_color: true
+                tap_action:
+                  action: toggle
+                title: Balrog
+              - type: state-icon
+                style:
+                  top: 84%
+                  left: 60%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.x2d
+                icon: mdi:printer-3d
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: X2D
+              - type: state-icon
+                style:
+                  top: 46%
+                  left: 31%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.h61d5_263c
+                icon: mdi:led-strip-variant
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Skadis
+              - type: state-icon
+                style:
+                  top: 75%
+                  left: 53%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.spoolease
+                icon: mdi:paper-roll
+                state_color: true
+                tap_action:
+                  action: toggle
+                title: Spoolease
+              - type: state-icon
+                style:
+                  top: 39%
+                  left: 37%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.dragonball
+                icon: mdi:toy-brick
+                state_color: true
+                tap_action:
+                  action: toggle
+                title: Dragonball
+              - type: state-icon
+                style:
+                  top: 46%
+                  left: 16%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.zelda
+                icon: mdi:toy-brick
+                state_color: true
+                tap_action:
+                  action: toggle
+                title: Zelda
+              - type: state-icon
+                style:
+                  top: 75%
+                  left: 24%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.one_piece
+                icon: mdi:raspberry-pi
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Deskdeck
+            image: /api/image/serve/3abd5e0ebdfff49159799716b17de00a/512x512
+      - type: grid
+        cards:
+          - type: picture-elements
+            elements:
+              - type: state-icon
+                style:
+                  top: 57%
+                  left: 48%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.1st_floor
+                icon: mdi:lamp
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: 1st Floor
+              - type: state-label
+                style:
+                  left: 0px
+                  bottom: 40px
+                  color: white
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: sensor.shelly_1st_floor_temperature
+                title: Temp
+                suffix: ' /'
+              - type: state-icon
+                style:
+                  left: 10px
+                  top: 60px
+                  color: gray
+                  border: 1px solid gray
+                  border-radius: 50%
+                  position: absolute
+                  transform: translate(0,0)
+                entity: scene.music_off_studio
+                icon: mdi:music-note-off-outline
+                title: Music off
+                tap_action:
+                  action: toggle
+              - type: state-label
+                style:
+                  left: 0px
+                  bottom: 20px
+                  color: gray
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: media_player.1st_floor
+                title: Artist
+                attribute: media_artist
+              - type: state-label
+                style:
+                  left: 0px
+                  bottom: 0px
+                  color: gray
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: media_player.1st_floor
+                title: Title
+                attribute: media_title
+              - type: state-label
+                style:
+                  left: 63px
+                  bottom: 40px
+                  color: white
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: sensor.shelly_1st_floor_humidity
+                title: Humidity
+              - type: state-icon
+                style:
+                  left: 60%
+                  top: 12%
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.buntebubbels
+                icon: mdi:string-lights
+                title: Buntebubbels
+                tap_action:
+                  action: toggle
+              - type: state-icon
+                style:
+                  top: 70%
+                  left: 38%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: media_player.1st_floor
+                icon: mdi:speaker
+                state_color: true
+                title: 1st Floor
+              - type: action-button
+                style:
+                  left: 10px
+                  top: 10px
+                  color: gray
+                  border: 1px solid gray
+                  border-radius: 50%
+                  position: absolute
+                  transform: translate(0,0)
+                action: media_player.volume_up
+                title: +
+                data: {}
+                target:
+                  device_id: b1a9eafc9fccabb7077c738f313fc6fa
+              - type: action-button
+                style:
+                  left: 60px
+                  top: 10px
+                  color: gray
+                  border: 1px solid gray
+                  border-radius: 50%
+                  position: absolute
+                  transform: translate(0,0)
+                action: media_player.volume_down
+                title: '-'
+                target:
+                  device_id:
+                    - b1a9eafc9fccabb7077c738f313fc6fa
+            image: /api/image/serve/1167af7933dcd020bb729fa986ec18ca/512x512
+      - type: grid
+        cards:
+          - type: picture-elements
+            elements:
+              - type: state-icon
+                style:
+                  top: 54%
+                  left: 82%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.drinnen_rechtsi
+                icon: mdi:lamp
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Drinnen Rechtsi
+              - type: state-icon
+                style:
+                  top: 34%
+                  left: 93%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.drinnen_linksi
+                icon: mdi:lamp
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Drinnen Linksi
+              - type: state-icon
+                style:
+                  top: 32%
+                  left: 38%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.neon_city
+                icon: mdi:led-strip-variant
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Transbubbels
+              - type: state-icon
+                style:
+                  top: 17%
+                  right: 12%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.sci_fi
+                icon: mdi:string-lights
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Wohnzimmerbubbels
+              - type: state-icon
+                style:
+                  top: 32%
+                  left: 52%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.vitrine
+                icon: mdi:lamps-outline
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Vitrine
+              - type: state-icon
+                style:
+                  top: 25%
+                  left: 45%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.korbbubbel_2
+                icon: mdi:lamp-outline
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Korbbubbel
+              - type: state-icon
+                style:
+                  left: 10px
+                  top: 60px
+                  color: gray
+                  border: 1px solid gray
+                  border-radius: 50%
+                  position: absolute
+                  transform: translate(0,0)
+                entity: scene.music_off_hausothesien
+                icon: mdi:music-note-off-outline
+                title: Music off
+                tap_action:
+                  action: toggle
+              - type: state-label
+                style:
+                  left: 0px
+                  bottom: 20px
+                  color: gray
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: media_player.kitchen
+                title: Artist
+                attribute: media_artist
+              - type: state-label
+                style:
+                  left: 0px
+                  bottom: 0px
+                  color: gray
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: media_player.kitchen
+                title: Title
+                attribute: media_title
+              - type: state-label
+                style:
+                  left: 0px
+                  bottom: 40px
+                  color: white
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: sensor.living_room_temperature
+                title: Temp
+                suffix: ' /'
+              - type: state-label
+                style:
+                  left: 63px
+                  bottom: 40px
+                  color: white
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: sensor.living_room_humidity
+                title: Humidity
+              - type: state-icon
+                style:
+                  top: 80%
+                  left: 62%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: button.coffee
+                icon: mdi:coffee-maker
+                title: Coffee
+                tap_action:
+                  action: toggle
+              - type: state-icon
+                style:
+                  left: 40%
+                  bottom: 10px
+                  color: gray
+                  border: 1px solid gray
+                  border-radius: 50%
+                  position: absolute
+                  transform: translate(0,0)
+                entity: scene.chillen
+                icon: mdi:sofa
+                title: Chillen
+                tap_action:
+                  action: toggle
+              - type: state-icon
+                style:
+                  left: 50%
+                  bottom: 10px
+                  color: gray
+                  border: 1px solid gray
+                  border-radius: 50%
+                  position: absolute
+                  transform: translate(0,0)
+                entity: scene.gute_nachti
+                icon: mdi:bed
+                title: Schlummern
+                tap_action:
+                  action: toggle
+              - type: state-icon
+                style:
+                  left: 60%
+                  bottom: 10px
+                  color: gray
+                  border: 1px solid gray
+                  border-radius: 50%
+                  position: absolute
+                  transform: translate(0,0)
+                entity: scene.morning
+                icon: mdi:sun-clock
+                title: Morning
+                tap_action:
+                  action: toggle
+              - type: state-icon
+                style:
+                  top: 65%
+                  left: 74%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: media_player.kitchen
+                icon: mdi:speaker
+                state_color: true
+                title: Kitchen
+              - type: state-icon
+                style:
+                  top: 18%
+                  left: 53%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: media_player.kitchen
+                icon: mdi:speaker
+                state_color: true
+                title: Living Room
+              - type: state-icon
+                style:
+                  top: 44%
+                  left: 88%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: media_player.denon_avr_x1800h
+                icon: mdi:speaker
+                state_color: true
+                title: Living Room (AVR)
+              - type: state-icon
+                style:
+                  top: 71%
+                  left: 27%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.draussen_vorni
+                icon: mdi:outdoor-lamp
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Draussen Vorni
+              - type: state-icon
+                style:
+                  top: 18%
+                  left: 92%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.draussen_linksi
+                icon: mdi:outdoor-lamp
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Draussen Linksi
+              - type: state-icon
+                style:
+                  top: 8%
+                  left: 56%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.draussen_rechtsi
+                icon: mdi:outdoor-lamp
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Draussen Rechtsi
+              - type: state-icon
+                style:
+                  top: 68%
+                  left: 38%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.nellyflower
+                icon: mdi:wall
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Nellyflower
+              - type: action-button
+                style:
+                  left: 10px
+                  top: 10px
+                  color: gray
+                  border: 1px solid gray
+                  border-radius: 50%
+                  position: absolute
+                  transform: translate(0,0)
+                action: media_player.volume_up
+                title: +
+                target:
+                  device_id:
+                    - 70db02479da4e3d549680e1cdc0421ae
+                    - e4229fefc68a3be86e5b1b7a14127277
+                    - 3050f0cf7465b2af292b209edab7a6bd
+                    - 1324e6b1d364906dae33d66029135056
+              - type: action-button
+                style:
+                  left: 60px
+                  top: 10px
+                  color: gray
+                  border: 1px solid gray
+                  border-radius: 50%
+                  position: absolute
+                  transform: translate(0,0)
+                action: media_player.volume_down
+                title: '-'
+                target:
+                  device_id:
+                    - 70db02479da4e3d549680e1cdc0421ae
+                    - e4229fefc68a3be86e5b1b7a14127277
+                    - 3050f0cf7465b2af292b209edab7a6bd
+                    - 1324e6b1d364906dae33d66029135056
+              - type: state-icon
+                style:
+                  top: 6%
+                  left: 85%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.draussen_channel_2
+                icon: mdi:string-lights
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Draussenbubbels
+              - type: image
+                style:
+                  right: 10px
+                  bottom: 10px
+                  width: 25%
+                  height: 20%
+                  border: 1px solid gray
+                  position: absolute
+                  transform: translate(0,0)
+                entity: camera.g4_doorbell_pro_high_resolution_channel
+                camera_image: camera.g4_doorbell_pro_high_resolution_channel
+                camera_view: auto
+              - type: state-icon
+                style:
+                  top: 15%
+                  left: 65%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: cover.blinds_l
+                icon: mdi:roller-shade
+                state_color: true
+                title: Blinds (L)
+                tap_action:
+                  action: perform-action
+                  perform_action: cover.close_cover
+                  target:
+                    entity_id: cover.blinds_l
+                  data: {}
+                hold_action:
+                  action: perform-action
+                  perform_action: cover.open_cover
+                  target:
+                    entity_id: cover.blinds_l
+                  data: {}
+                double_tap_action:
+                  action: perform-action
+                  perform_action: cover.stop_cover
+                  target:
+                    entity_id: cover.blinds_l
+                  data: {}
+              - type: state-icon
+                style:
+                  top: 43%
+                  left: 37%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.plum
+                icon: mdi:toy-brick
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Chrysanthenum
+              - type: state-icon
+                style:
+                  top: 46%
+                  left: 23%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.orchid
+                icon: mdi:toy-brick
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Plum
+              - type: state-icon
+                style:
+                  top: 43%
+                  left: 47%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.orchid_2
+                icon: mdi:toy-brick
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Orchid
+              - type: state-icon
+                style:
+                  top: 4%
+                  left: 72%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.draussen_channel_1
+                icon: mdi:fountain
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Draussenbubbels
+              - type: state-icon
+                style:
+                  top: 57%
+                  left: 11%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.vivarium
+                icon: mdi:toy-brick
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Vivarium
+              - type: state-icon
+                style:
+                  top: 63%
+                  left: 19%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.3dprinter_fan
+                icon: mdi:toy-brick
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Mushrooms
+            image: https://demo.home-assistant.io/stub_config/floorplan.png
+            dark_mode_image: /api/image/serve/a57d42a3fe145380a1376296983a1332/512x512
+      - type: grid
+        cards:
+          - type: picture-elements
+            elements:
+              - type: state-icon
+                style:
+                  top: 23%
+                  right: 20%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.fitness
+                icon: mdi:string-lights
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Fitness
+              - type: state-icon
+                style:
+                  left: 10px
+                  top: 60px
+                  color: gray
+                  border: 1px solid gray
+                  border-radius: 50%
+                  position: absolute
+                  transform: translate(0,0)
+                entity: scene.scene_fitness_music_off
+                icon: mdi:music-note-off-outline
+                title: Music off
+                tap_action:
+                  action: toggle
+              - type: state-label
+                style:
+                  left: 0px
+                  bottom: 20px
+                  color: gray
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: media_player.denon_home_150_3
+                title: Artist
+                attribute: media_artist
+              - type: state-label
+                style:
+                  left: 0px
+                  bottom: 0px
+                  color: gray
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: media_player.denon_home_150_3
+                title: Title
+                attribute: media_title
+              - type: state-label
+                style:
+                  left: 0px
+                  bottom: 40px
+                  color: white
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: sensor.cellar_temperature
+                title: Temp
+                suffix: ' /'
+              - type: state-label
+                style:
+                  left: 63px
+                  bottom: 40px
+                  color: white
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: sensor.cellar_humidity
+                title: Humidity
+              - type: state-icon
+                style:
+                  top: 84%
+                  left: 56%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.steampunk
+                icon: mdi:washing-machine
+                title: Waschmaschine
+                tap_action:
+                  action: toggle
+              - type: state-icon
+                style:
+                  top: 18%
+                  left: 53%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: media_player.denon_home_150_2
+                icon: mdi:speaker
+                state_color: true
+                title: Fitness (R)
+              - type: state-icon
+                style:
+                  top: 36%
+                  left: 53%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: media_player.fitness
+                icon: mdi:speaker
+                state_color: true
+                title: Cellar
+              - type: state-icon
+                style:
+                  top: 27%
+                  left: 45%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: media_player.denon_home_150_3
+                icon: mdi:speaker
+                state_color: true
+                title: Fitness (L)
+              - type: state-icon
+                style:
+                  top: 70%
+                  left: 32%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.steampunk_top
+                icon: mdi:iron
+                tap_action:
+                  action: toggle
+                title: Bügeleisen
+              - type: state-label
+                style:
+                  left: 0px
+                  bottom: 60px
+                  color: dimgray
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: sensor.server_temperature
+                title: Temp Server
+                suffix: ' /'
+              - type: state-label
+                style:
+                  left: 63px
+                  bottom: 60px
+                  color: dimgray
+                  font-weight: bold
+                  position: absolute
+                  transform: translate(0,0)
+                entity: sensor.server_humidity
+                title: Humidity Server
+              - type: action-button
+                style:
+                  left: 10px
+                  top: 10px
+                  color: gray
+                  border: 1px solid gray
+                  border-radius: 50%
+                  position: absolute
+                  transform: translate(0,0)
+                action: media_player.volume_up
+                title: +
+                data: {}
+                target:
+                  device_id:
+                    - c1c93d62ac3dbbd8e9fd999b79fa585d
+                    - 9192608bd28274d3b8eaff01d41c3a6b
+              - type: action-button
+                style:
+                  left: 60px
+                  top: 10px
+                  color: gray
+                  border: 1px solid gray
+                  border-radius: 50%
+                  position: absolute
+                  transform: translate(0,0)
+                action: media_player.volume_down
+                title: '-'
+                target:
+                  device_id:
+                    - c1c93d62ac3dbbd8e9fd999b79fa585d
+                    - 9192608bd28274d3b8eaff01d41c3a6b
+              - type: state-icon
+                style:
+                  top: 58%
+                  left: 15%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.server
+                icon: mdi:monitor
+                tap_action:
+                  action: toggle
+                title: Server
+            image: https://demo.home-assistant.io/stub_config/floorplan.png
+            dark_mode_image: /api/image/serve/8b64d72101338f843b9270ecb174a4aa/512x512
+    type: sections
+    max_columns: 4
+    dense_section_placement: true
+    cards: []
+
