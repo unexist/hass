@@ -394,14 +394,14 @@ views:
                 title: Astronaut
               - type: state-icon
                 style:
-                  top: 56%
-                  left: 32%
+                  top: 72%
+                  left: 16%
                   color: black
                   border: 1px solid gray
                   border-radius: 50%
                   background-color: rgba(255, 255, 255, 0.5)
-                entity: light.desktop
-                icon: mdi:television-ambient-light
+                entity: light.deskdeck
+                icon: mdi:led-strip-variant
                 tap_action:
                   action: toggle
                 state_color: true
@@ -478,20 +478,6 @@ views:
                 title: Skadis
               - type: state-icon
                 style:
-                  top: 75%
-                  left: 53%
-                  color: black
-                  border: 1px solid gray
-                  border-radius: 50%
-                  background-color: rgba(255, 255, 255, 0.5)
-                entity: switch.spoolease
-                icon: mdi:paper-roll
-                state_color: true
-                tap_action:
-                  action: toggle
-                title: Spoolease
-              - type: state-icon
-                style:
                   top: 39%
                   left: 37%
                   color: black
@@ -504,6 +490,20 @@ views:
                 tap_action:
                   action: toggle
                 title: Dragonball
+              - type: state-icon
+                style:
+                  top: 57%
+                  left: 32%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: switch.spoolease
+                icon: mdi:paper-roll
+                state_color: true
+                tap_action:
+                  action: toggle
+                title: Spoolease
               - type: state-icon
                 style:
                   top: 46%
@@ -752,7 +752,7 @@ views:
               - type: state-icon
                 style:
                   left: 10px
-                  top: 60px
+                  top: 25%
                   color: gray
                   border: 1px solid gray
                   border-radius: 50%
@@ -861,6 +861,40 @@ views:
                 title: Morning
                 tap_action:
                   action: toggle
+              - type: action-button
+                style:
+                  left: 30%
+                  top: 10px
+                  color: gray
+                  border: 1px solid gray
+                  border-radius: 50%
+                  position: absolute
+                  transform: translate(0,0)
+                action: media_player.volume_up
+                title: +
+                target:
+                  device_id:
+                    - 70db02479da4e3d549680e1cdc0421ae
+                    - e4229fefc68a3be86e5b1b7a14127277
+                    - 3050f0cf7465b2af292b209edab7a6bd
+                    - 1324e6b1d364906dae33d66029135056
+              - type: action-button
+                style:
+                  left: 41%
+                  top: 10px
+                  color: gray
+                  border: 1px solid gray
+                  border-radius: 50%
+                  position: absolute
+                  transform: translate(0,0)
+                action: media_player.volume_down
+                title: '-'
+                target:
+                  device_id:
+                    - 70db02479da4e3d549680e1cdc0421ae
+                    - e4229fefc68a3be86e5b1b7a14127277
+                    - 3050f0cf7465b2af292b209edab7a6bd
+                    - 1324e6b1d364906dae33d66029135056
               - type: state-icon
                 style:
                   top: 65%
@@ -953,40 +987,6 @@ views:
                   action: toggle
                 state_color: true
                 title: Nellyflower
-              - type: action-button
-                style:
-                  left: 10px
-                  top: 10px
-                  color: gray
-                  border: 1px solid gray
-                  border-radius: 50%
-                  position: absolute
-                  transform: translate(0,0)
-                action: media_player.volume_up
-                title: +
-                target:
-                  device_id:
-                    - 70db02479da4e3d549680e1cdc0421ae
-                    - e4229fefc68a3be86e5b1b7a14127277
-                    - 3050f0cf7465b2af292b209edab7a6bd
-                    - 1324e6b1d364906dae33d66029135056
-              - type: action-button
-                style:
-                  left: 60px
-                  top: 10px
-                  color: gray
-                  border: 1px solid gray
-                  border-radius: 50%
-                  position: absolute
-                  transform: translate(0,0)
-                action: media_player.volume_down
-                title: '-'
-                target:
-                  device_id:
-                    - 70db02479da4e3d549680e1cdc0421ae
-                    - e4229fefc68a3be86e5b1b7a14127277
-                    - 3050f0cf7465b2af292b209edab7a6bd
-                    - 1324e6b1d364906dae33d66029135056
               - type: state-icon
                 style:
                   top: 6%
@@ -1127,6 +1127,27 @@ views:
                   action: toggle
                 state_color: true
                 title: Mushrooms
+              - type: image
+                style:
+                  left: 10px
+                  top: 10px
+                  width: 25%
+                  height: 20%
+                  border: 1px solid gray
+                  position: absolute
+                  transform: translate(0,0)
+                entity: camera.g5_turret_ultra_high_resolution_channel
+                camera_image: camera.g5_turret_ultra_high_resolution_channel
+                camera_view: auto
+                card_mod:
+                  style:
+                    hui-image:
+                      $: |
+                        #image {
+                          aspect-ratio: 4/3;
+                          object-fit: cover;
+                          vertical-align: middle;             
+                        }      
             image: https://demo.home-assistant.io/stub_config/floorplan.png
             dark_mode_image: /api/image/serve/a57d42a3fe145380a1376296983a1332/512x512
       - type: grid
