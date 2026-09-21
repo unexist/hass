@@ -14,7 +14,7 @@ views:
                 elements: []
                 image:
                   media_content_id: https://demo.home-assistant.io/stub_config/floorplan.png
-                camera_image: camera.backyard_fluent
+                camera_image: camera.g5_turret_ultra_high_resolution_channel
                 card_mod:
                   style:
                     hui-image:
