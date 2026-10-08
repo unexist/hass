@@ -1,3 +1,6 @@
+kiosk_mode:
+  hide_header: true
+  hide_sidebar: '{{ is_state("input_boolean.hide_sidebar", "on") }}'
 views:
   - type: sections
     sections:
@@ -27,6 +30,21 @@ views:
             grid_options:
               rows: auto
               columns: full
+          - type: tile
+            entity: binary_sensor.garden_contact_opening
+            name: Garden
+            vertical: false
+            features_position: bottom
+          - type: tile
+            entity: binary_sensor.studio_switch_opening
+            name: Studio
+            show_entity_picture: false
+            vertical: false
+            features_position: bottom
+          - type: tile
+            entity: sensor.steampunk_energy
+          - type: tile
+            entity: sensor.x2d_energy
           - type: tile
             entity: scene.music_off_studio
           - type: tile
@@ -223,16 +241,13 @@ views:
               - type: target-temperature
             features_position: inline
           - type: tile
-            entity: binary_sensor.garden_contact_opening
-            name: Garden
+            grid_options:
+              columns: full
+            entity: climate.bedroom
             vertical: false
-            features_position: bottom
-          - type: tile
-            entity: binary_sensor.studio_switch_opening
-            name: Studio
-            show_entity_picture: false
-            vertical: false
-            features_position: bottom
+            features:
+              - type: target-temperature
+            features_position: inline
         column_span: 1
       - type: grid
         cards:
