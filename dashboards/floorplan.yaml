@@ -1,6 +1,3 @@
-kiosk_mode:
-  hide_header: true
-  hide_sidebar: '{{ is_state("input_boolean.hide_sidebar", "on") }}'
 views:
   - title: Home
     header:
