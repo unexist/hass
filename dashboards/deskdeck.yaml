@@ -28,23 +28,8 @@ views:
                           vertical-align: middle;             
                         }    
             grid_options:
-              rows: auto
+              rows: 5
               columns: full
-          - type: tile
-            entity: binary_sensor.garden_contact_opening
-            name: Garden
-            vertical: false
-            features_position: bottom
-          - type: tile
-            entity: binary_sensor.studio_switch_opening
-            name: Studio
-            show_entity_picture: false
-            vertical: false
-            features_position: bottom
-          - type: tile
-            entity: sensor.steampunk_energy
-          - type: tile
-            entity: sensor.x2d_energy
           - type: tile
             entity: scene.music_off_studio
           - type: tile
@@ -55,15 +40,6 @@ views:
             entity: scene.morning
           - type: tile
             entity: switch.neoncity
-            icon: mdi:toy-brick
-            vertical: false
-            tap_action:
-              action: toggle
-            icon_tap_action:
-              action: toggle
-            features_position: bottom
-          - type: tile
-            entity: switch.steampunk_high
             icon: mdi:toy-brick
             vertical: false
             tap_action:
@@ -199,55 +175,56 @@ views:
               - type: media-player-volume-slider
             features_position: inline
           - type: tile
-            grid_options:
-              columns: full
             entity: climate.kitchen
             vertical: false
-            features:
-              - type: target-temperature
             features_position: inline
-          - type: tile
             grid_options:
-              columns: full
+              rows: 1
+          - type: tile
             entity: climate.living_room_l
             vertical: false
-            features:
-              - type: target-temperature
             features_position: inline
           - type: tile
-            grid_options:
-              columns: full
             entity: climate.living_room_r
             vertical: false
-            features:
-              - type: target-temperature
             features_position: inline
           - type: tile
-            grid_options:
-              columns: full
             entity: climate.studio_l
             show_entity_picture: false
             hide_state: false
             vertical: false
-            features:
-              - type: target-temperature
             features_position: inline
           - type: tile
-            grid_options:
-              columns: full
             entity: climate.studio_r
             vertical: false
-            features:
-              - type: target-temperature
             features_position: inline
           - type: tile
-            grid_options:
-              columns: full
             entity: climate.bedroom
             vertical: false
-            features:
-              - type: target-temperature
             features_position: inline
+          - type: tile
+            entity: climate.small_bathroom
+            vertical: false
+            features_position: inline
+          - type: tile
+            entity: climate.small_floor
+            vertical: false
+            features_position: inline
+          - type: tile
+            entity: binary_sensor.garden_contact_opening
+            name: Garden
+            vertical: false
+            features_position: bottom
+          - type: tile
+            entity: binary_sensor.studio_switch_opening
+            name: Studio
+            show_entity_picture: false
+            vertical: false
+            features_position: bottom
+          - type: tile
+            entity: sensor.steampunk_energy
+          - type: tile
+            entity: sensor.x2d_energy
         column_span: 1
       - type: grid
         cards:
