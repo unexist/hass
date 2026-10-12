@@ -30,6 +30,32 @@ views:
             grid_options:
               rows: 5
               columns: full
+          - type: horizontal-stack
+            cards:
+              - clock_style: digital
+                clock_size: small
+                time_format: '24'
+                show_seconds: false
+                no_background: false
+                type: clock
+                face_style: markers
+                card_mod:
+                  style: |
+                    ha-card {
+                      background-color: rgba(255,254,249, 0.25) !important;
+                    }          
+              - type: energy-date-selection
+                vertical_opening_direction: auto
+                opening_direction: auto
+                disable_compare: false
+                card_mod:
+                  style: |
+                    ha-card {
+                      background-color: rgba(255,254,249, 0.25) !important;
+                    }       
+            grid_options:
+              columns: full
+              rows: 1
           - type: tile
             entity: scene.music_off_studio
           - type: tile
