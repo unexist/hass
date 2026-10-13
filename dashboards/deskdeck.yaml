@@ -44,7 +44,7 @@ views:
                 card_mod:
                   style: |
                     ha-card {        
-                      background-color: rgba(255,254,249, 0.25) !important;
+                      background-color: rgba(111,111,111, 0.2); !important;
                     }        
               - type: custom:digital-clock
                 padding: 8px 0
@@ -58,7 +58,7 @@ views:
                 card_mod:
                   style: |
                     ha-card {        
-                      background-color: rgba(255,254,249, 0.25) !important;
+                      background-color: rgba(111,111,111, 0.2) !important;
                     }         
             grid_options:
               columns: full
