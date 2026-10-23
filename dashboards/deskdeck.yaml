@@ -74,6 +74,9 @@ views:
           - type: tile
             entity: switch.neoncity
             icon: mdi:toy-brick
+            state_content:
+              - last_changed
+              - state
             vertical: false
             tap_action:
               action: toggle
@@ -82,79 +85,11 @@ views:
             features_position: bottom
           - type: tile
             entity: switch.steampunk_low
+            name: Steampunk
             icon: mdi:toy-brick
-            vertical: false
-            tap_action:
-              action: toggle
-            icon_tap_action:
-              action: toggle
-            features_position: bottom
-          - type: tile
-            entity: switch.dune
-            icon: mdi:toy-brick
-            vertical: false
-            tap_action:
-              action: toggle
-            icon_tap_action:
-              action: toggle
-            features_position: bottom
-          - type: tile
-            entity: switch.astronaut
-            icon: mdi:toy-brick
-            vertical: false
-            tap_action:
-              action: toggle
-            icon_tap_action:
-              action: toggle
-            features_position: bottom
-          - type: tile
-            entity: switch.onepiece
-            icon: mdi:toy-brick
-            vertical: false
-            tap_action:
-              action: toggle
-            icon_tap_action:
-              action: toggle
-            features_position: bottom
-          - type: tile
-            entity: switch.horizon
-            icon: mdi:toy-brick
-            vertical: false
-            tap_action:
-              action: toggle
-            icon_tap_action:
-              action: toggle
-            features_position: bottom
-          - type: tile
-            entity: switch.dragonball
-            icon: mdi:toy-brick
-            vertical: false
-            tap_action:
-              action: toggle
-            icon_tap_action:
-              action: toggle
-            features_position: bottom
-          - type: tile
-            entity: switch.gameboy
-            icon: mdi:toy-brick
-            vertical: false
-            tap_action:
-              action: toggle
-            icon_tap_action:
-              action: toggle
-            features_position: bottom
-          - type: tile
-            entity: switch.balrog
-            icon: mdi:toy-brick
-            vertical: false
-            tap_action:
-              action: toggle
-            icon_tap_action:
-              action: toggle
-            features_position: bottom
-          - type: tile
-            entity: switch.zelda
-            icon: mdi:toy-brick
+            state_content:
+              - last_changed
+              - state
             vertical: false
             tap_action:
               action: toggle
@@ -164,6 +99,117 @@ views:
           - type: tile
             entity: switch.dmx
             icon: mdi:power-socket-us
+            state_content:
+              - last_changed
+              - state
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.x2d
+            icon: mdi:power-socket-us
+            state_content:
+              - last_changed
+              - state
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.dune
+            icon: mdi:toy-brick
+            state_content:
+              - last_changed
+              - state
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.astronaut
+            icon: mdi:toy-brick
+            state_content:
+              - last_changed
+              - state
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.horizon
+            icon: mdi:toy-brick
+            state_content:
+              - last_changed
+              - state
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.onepiece
+            icon: mdi:toy-brick
+            state_content:
+              - last_changed
+              - state
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.dragonball
+            icon: mdi:toy-brick
+            state_content:
+              - last_changed
+              - state
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.gameboy
+            icon: mdi:toy-brick
+            state_content:
+              - last_changed
+              - state
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.balrog
+            icon: mdi:toy-brick
+            state_content:
+              - last_changed
+              - state
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.zelda
+            icon: mdi:toy-brick
+            state_content:
+              - last_changed
+              - state
             vertical: false
             tap_action:
               action: toggle
