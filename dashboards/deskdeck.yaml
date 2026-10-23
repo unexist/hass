@@ -263,6 +263,20 @@ views:
               - type: media-player-volume-slider
             features_position: inline
           - type: tile
+            grid_options:
+              rows: auto
+              columns: full
+            entity: media_player.bathroom
+            name: Bathroom
+            show_entity_picture: true
+            state_content:
+              - media_artist
+              - media_title
+            vertical: false
+            features:
+              - type: media-player-volume-slider
+            features_position: inline
+          - type: tile
             entity: climate.kitchen
             vertical: false
             features_position: inline
@@ -680,7 +694,7 @@ views:
                             card_mod:
                               style: |
                                 ha-card {
-                                  font-size: 4.7rem !important;
+                                  font-size: 3.7rem !important;
                                 }                   
                           - type: entity
                             entity: sensor.x2d_20p6bj631101145_ams_2_humidity
@@ -768,7 +782,7 @@ views:
                         chips:
                           - type: template
                             entity: binary_sensor.x2d_20p6bj631101145_online
-                            content: AMS HT
+                            content: HT
                             card_mod:
                               style: |
                                 ha-card {
