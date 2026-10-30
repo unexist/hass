@@ -30,39 +30,6 @@ views:
             grid_options:
               rows: 5
               columns: full
-          - type: horizontal-stack
-            cards:
-              - type: custom:digital-clock
-                padding: 8px 0
-                firstLineFormat: HH:mm:ss
-                secondLineFormat: none
-                firstLineLayout:
-                  textAlign: center
-                  lineHeight: 1em
-                  fontSize: 2.0em
-                  fontWeight: normal
-                card_mod:
-                  style: |
-                    ha-card {        
-                      background-color: rgba(111,111,111, 0.2); !important;
-                    }        
-              - type: custom:digital-clock
-                padding: 8px 0
-                firstLineFormat: ccc, M, y (W)
-                secondLineFormat: none
-                firstLineLayout:
-                  textAlign: center
-                  lineHeight: 1em
-                  fontSize: 2.0em
-                  fontWeight: normal
-                card_mod:
-                  style: |
-                    ha-card {        
-                      background-color: rgba(111,111,111, 0.2) !important;
-                    }         
-            grid_options:
-              columns: full
-              rows: 1
           - type: tile
             entity: scene.music_off_studio
           - type: tile
@@ -72,21 +39,8 @@ views:
           - type: tile
             entity: scene.morning
           - type: tile
-            entity: switch.neoncity
-            icon: mdi:toy-brick
-            state_content:
-              - last_changed
-              - state
-            vertical: false
-            tap_action:
-              action: toggle
-            icon_tap_action:
-              action: toggle
-            features_position: bottom
-          - type: tile
-            entity: switch.steampunk_low
-            name: Steampunk
-            icon: mdi:toy-brick
+            entity: switch.one_piece
+            icon: mdi:power-socket-us
             state_content:
               - last_changed
               - state
@@ -109,8 +63,45 @@ views:
               action: toggle
             features_position: bottom
           - type: tile
+            entity: switch.fridge
+            icon: mdi:power-socket-us
+            state_content:
+              - last_changed
+              - state
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
             entity: switch.x2d
             icon: mdi:power-socket-us
+            state_content:
+              - last_changed
+              - state
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.neoncity
+            icon: mdi:toy-brick
+            state_content:
+              - last_changed
+              - state
+            vertical: false
+            tap_action:
+              action: toggle
+            icon_tap_action:
+              action: toggle
+            features_position: bottom
+          - type: tile
+            entity: switch.steampunk_low
+            name: Steampunk
+            icon: mdi:toy-brick
             state_content:
               - last_changed
               - state
