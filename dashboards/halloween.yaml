@@ -1,0 +1,88 @@
+kiosk_mode:
+  hide_header: true
+  hide_sidebar: true
+views:
+  - type: sections
+    sections:
+      - type: grid
+        cards:
+          - type: iframe
+            url: http://jellyfin.lan:8096
+            aspect_ratio: 50%
+            grid_options:
+              columns: full
+              rows: 7
+          - type: tile
+            grid_options:
+              rows: auto
+              columns: 12
+            entity: media_player.studio2
+            name:
+              type: area
+            show_entity_picture: true
+            hide_state: false
+            state_content:
+              - media_artist
+              - media_title
+            vertical: false
+            features_position: bottom
+          - type: tile
+            grid_options:
+              rows: auto
+              columns: 12
+            entity: media_player.kitchen
+            name:
+              type: area
+            show_entity_picture: true
+            hide_state: false
+            state_content:
+              - media_artist
+              - media_title
+            vertical: false
+            features_position: bottom
+          - type: tile
+            grid_options:
+              rows: auto
+              columns: 12
+            entity: media_player.bathroom
+            name:
+              type: device
+            show_entity_picture: true
+            hide_state: false
+            state_content:
+              - media_artist
+              - media_title
+            vertical: false
+            features_position: bottom
+          - type: tile
+            grid_options:
+              rows: auto
+              columns: 12
+            entity: media_player.denon_home_150_3
+            name:
+              type: area
+            show_entity_picture: true
+            hide_state: false
+            state_content:
+              - media_artist
+              - media_title
+            vertical: false
+            features_position: bottom
+        column_span: 4
+    max_columns: 4
+    title: Halloween
+    cards: []
+    background:
+      opacity: 50
+      alignment: center
+      size: cover
+      repeat: no-repeat
+      attachment: fixed
+      image:
+        media_content_id: media-source://image_upload/0a76fbe01693124e59552429be32b9c4
+        media_content_type: image/png
+        metadata:
+          title: skeletons-dashboard.png
+          thumbnail: /api/image/serve/0a76fbe01693124e59552429be32b9c4/256x256
+          media_class: image
+
