@@ -518,20 +518,6 @@ views:
                 tap_action:
                   action: toggle
                 title: Zelda
-              - type: state-icon
-                style:
-                  top: 75%
-                  left: 24%
-                  color: black
-                  border: 1px solid gray
-                  border-radius: 50%
-                  background-color: rgba(255, 255, 255, 0.5)
-                entity: switch.one_piece
-                icon: mdi:raspberry-pi
-                tap_action:
-                  action: toggle
-                state_color: true
-                title: Deskdeck
             image: /api/image/serve/3abd5e0ebdfff49159799716b17de00a/512x512
       - type: grid
         cards:
@@ -1352,6 +1338,20 @@ views:
                 tap_action:
                   action: toggle
                 title: Server
+              - type: state-icon
+                style:
+                  top: 26%
+                  left: 32%
+                  color: black
+                  border: 1px solid gray
+                  border-radius: 50%
+                  background-color: rgba(255, 255, 255, 0.5)
+                entity: light.stairlight
+                icon: mdi:string-lights
+                tap_action:
+                  action: toggle
+                state_color: true
+                title: Stairlight
             image: https://demo.home-assistant.io/stub_config/floorplan.png
             dark_mode_image: /api/image/serve/8b64d72101338f843b9270ecb174a4aa/512x512
     type: sections
