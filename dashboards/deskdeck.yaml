@@ -282,6 +282,10 @@ views:
             vertical: false
             features_position: inline
           - type: tile
+            entity: climate.bedroom
+            vertical: false
+            features_position: inline
+          - type: tile
             entity: climate.studio_l
             show_entity_picture: false
             hide_state: false
@@ -289,10 +293,6 @@ views:
             features_position: inline
           - type: tile
             entity: climate.studio_r
-            vertical: false
-            features_position: inline
-          - type: tile
-            entity: climate.bedroom
             vertical: false
             features_position: inline
           - type: tile
